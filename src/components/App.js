@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChakraProvider, Box, VStack } from '@chakra-ui/react';
 import { theme } from '../styles';
-import BoardHeader from './BoardHeader';
+import PageHeader from './PageHeader';
 import Board from './Board';
 import Footer from './Footer';
 import { records, M } from '../data';
@@ -37,7 +37,7 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl" fontFamily="Poppins">
         <VStack minH="100vh" direction="column" p={12} spacing={5}>
-          <BoardHeader
+          <PageHeader
             board={board}
             handleBoardChange={handleBoardChange}
             records={records}

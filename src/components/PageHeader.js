@@ -3,7 +3,7 @@ import { Text, Image, Button, ButtonGroup, VStack, HStack, Link } from '@chakra-
 import { M, W, links } from '../data';
 import { theme } from '../styles';
 
-const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
+const PageHeader = ({ windowWidth, board, handleBoardChange }) => {
   return (
     <VStack spacing={5}>
       <Link href={links.website} isExternal>
@@ -43,4 +43,4 @@ const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
   );
 };
 
-export default BoardHeader;
+export default PageHeader;
