@@ -14,6 +14,7 @@ const PageHeader = ({ windowWidth, board, handleBoardChange }) => {
 
         <ButtonGroup spacing="0">
           <Button
+            _hover={{ bg: 'trasnparent' }}
             fontSize="0.66em"
             borderRadius="none"
             borderLeftRadius="md"
@@ -26,6 +27,7 @@ const PageHeader = ({ windowWidth, board, handleBoardChange }) => {
             MEN
           </Button>
           <Button
+            _hover={{ bg: 'trasnparent' }}
             fontSize="0.66em"
             borderRadius="none"
             borderRightRadius="md"
