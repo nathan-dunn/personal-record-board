@@ -56,16 +56,18 @@ const LiftContainer = ({ liftName, records }) => {
           {liftName}
         </Text>
 
-        <RecordRow
-          key="title"
-          row={0}
-          record={['NAME', 'WEIGHT', 'REPS']}
-          len={recordsSorted.length}
-        />
+        <Box pl={4} pr={4}>
+          <RecordRow
+            key="title"
+            row={0}
+            record={['NAME', 'WEIGHT', 'REPS']}
+            len={recordsSorted.length}
+          />
 
-        {recordsSorted.map((record, index) => (
-          <RecordRow key={index} row={index + 1} record={record} len={recordsSorted.length} />
-        ))}
+          {recordsSorted.map((record, index) => (
+            <RecordRow key={index} row={index + 1} record={record} len={recordsSorted.length} />
+          ))}
+        </Box>
       </Box>
     </WrapItem>
   );

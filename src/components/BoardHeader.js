@@ -26,9 +26,10 @@ const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
             fontSize="0.66em"
             borderRadius="none"
             borderLeftRadius="md"
-            backgroundColor={board === M ? colors.hornOrange : 'transparent'}
+            backgroundColor={board === M ? colors.lightGray : 'transparent'}
+            color={board === M ? colors.dark : colors.lightGray}
             onClick={() => handleBoardChange(M)}
-            border="1px solid white"
+            border={`1px solid ${colors.lightGray}`}
             borderRight="none"
           >
             MEN
@@ -37,9 +38,10 @@ const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
             fontSize="0.66em"
             borderRadius="none"
             borderRightRadius="md"
-            backgroundColor={board === W ? colors.hornOrange : 'transparent'}
+            backgroundColor={board === W ? colors.lightGray : 'transparent'}
+            color={board === W ? colors.dark : colors.lightGray}
             onClick={() => handleBoardChange(W)}
-            border="1px solid white"
+            border={`1px solid ${colors.lightGray}`}
             borderLeft="none"
           >
             WOMEN
