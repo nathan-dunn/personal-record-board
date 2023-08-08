@@ -24,12 +24,24 @@ export const records = {
 };
 
 // data calls
-addLifter('Adam', M, SQ, 315, 5);
-addLifter('Adam', M, PR, 135, 5);
-addLifter('Adam', M, BP, 225, 5);
-addLifter('Adam', M, DL, 405, 5);
+// addLifter('Adam', M, SQ, 315, 5);
+// addLifter('Adam', M, PR, 135, 5);
+// addLifter('Adam', M, BP, 225, 5);
+// addLifter('Adam', M, DL, 405, 5);
 
-addLifter('Clyde', M, SQ, 225, 5);
-addLifter('Clyde', M, PR, 115, 5);
-addLifter('Clyde', M, BP, 185, 5);
-addLifter('Clyde', M, DL, 315, 5);
+// addLifter('Clyde', M, SQ, 225, 5);
+// addLifter('Clyde', M, PR, 115, 5);
+// addLifter('Clyde', M, BP, 185, 5);
+// addLifter('Clyde', M, DL, 315, 5);
+
+addLifter('Mike M', M, SQ, 515, 1);
+addLifter('Marc S', M, SQ, 405, 5);
+addLifter('Rene', M, SQ, 405, 1);
+addLifter('Mostafa', M, SQ, 375, 3);
+addLifter('Anup K', M, SQ, 350, 5);
+addLifter('Philip A', M, SQ, 350, 3);
+addLifter('Nick', M, SQ, 330, 5);
+addLifter('Alex F', M, SQ, 330, 5);
+addLifter('George M', M, SQ, 325, 5);
+addLifter('Cesar', M, SQ, 322.5, 5);
+addLifter('Bob', M, SQ, 135, 5);

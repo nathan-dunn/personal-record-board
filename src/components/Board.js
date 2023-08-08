@@ -1,17 +1,20 @@
-import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
-import Lift from './Lift';
+import React, { useRef, useState, useEffect } from 'react';
+import { Box, Flex, Text, Stack, Wrap } from '@chakra-ui/react';
+import LiftContainer from './LiftContainer';
 import { SQ, PR, BP, DL } from '../data';
 
-const Board = ({ sex, records }) => {
+const Board = ({ sex, records, windowWidth }) => {
   return (
-    <Box p={8} border="1px solid red">
-      <Flex justify="space-between">
-        {[SQ, PR, BP, DL].map(liftName => (
-          <Lift key={liftName} liftName={liftName} records={records[sex][liftName]} />
-        ))}
-      </Flex>
-    </Box>
+    <Wrap spacing={2} justify="center">
+      {[SQ, PR, BP, DL].map(liftName => (
+        <LiftContainer
+          key={liftName}
+          liftName={liftName}
+          records={records[sex][liftName]}
+          windowWidth={windowWidth}
+        />
+      ))}
+    </Wrap>
   );
 };
 
