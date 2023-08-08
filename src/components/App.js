@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChakraProvider, Box, Grid, Flex, VStack } from '@chakra-ui/react';
+import { ChakraProvider, Box, VStack } from '@chakra-ui/react';
 import { theme } from '../styles';
 import BoardHeader from './BoardHeader';
 import Board from './Board';

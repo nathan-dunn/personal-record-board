@@ -1,26 +1,12 @@
 import React from 'react';
-import {
-  Box,
-  Flex,
-  Text,
-  Image,
-  Wrap,
-  Button,
-  ButtonGroup,
-  VStack,
-  HStack,
-  Link,
-} from '@chakra-ui/react';
-
-import { M, W } from '../data';
+import { Text, Image, Button, ButtonGroup, VStack, HStack, Link } from '@chakra-ui/react';
+import { M, W, links } from '../data';
 import { theme } from '../styles';
-
-const { colors } = theme;
 
 const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
   return (
     <VStack spacing={5}>
-      <Link href="https://www.hornstrength.com/" isExternal>
+      <Link href={links.website} isExternal>
         <Image src={require('../assets/HS+WHITE+FINAL.png')} alt="" width={480} />
       </Link>
       <HStack spacing={10}>
@@ -31,10 +17,10 @@ const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
             fontSize="0.66em"
             borderRadius="none"
             borderLeftRadius="md"
-            border={`1px solid ${colors.darkWhite}`}
+            border={`1px solid ${theme.colors.darkWhite}`}
             borderRight="none"
-            backgroundColor={board === M ? colors.darkWhite : 'transparent'}
-            color={board === M ? colors.dark : colors.darkWhite}
+            backgroundColor={board === M ? theme.colors.darkWhite : 'transparent'}
+            color={board === M ? theme.colors.dark : theme.colors.darkWhite}
             onClick={() => handleBoardChange(M)}
           >
             MEN
@@ -43,10 +29,10 @@ const BoardHeader = ({ windowWidth, board, handleBoardChange }) => {
             fontSize="0.66em"
             borderRadius="none"
             borderRightRadius="md"
-            border={`1px solid ${colors.darkWhite}`}
+            border={`1px solid ${theme.colors.darkWhite}`}
             borderLeft="none"
-            backgroundColor={board === W ? colors.darkWhite : 'transparent'}
-            color={board === W ? colors.dark : colors.darkWhite}
+            backgroundColor={board === W ? theme.colors.darkWhite : 'transparent'}
+            color={board === W ? theme.colors.dark : theme.colors.darkWhite}
             onClick={() => handleBoardChange(W)}
           >
             WOMEN

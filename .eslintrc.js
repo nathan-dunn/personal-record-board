@@ -2,16 +2,17 @@ module.exports = {
   extends: 'react-app',
   rules: {
     'no-console': 'off',
-    'no-constant-condition': 'warn',
-    'no-unreachable': 'warn',
-    'no-unused-labels': 'warn',
-    'no-unused-vars': 'off',
     'no-use-before-define': 'off',
-    'react/no-string-refs': 'warn',
-    'react/prop-types': 'off',
-    'no-restricted-globals': 'warn',
     'no-useless-concat': 'off',
     'react/no-children-prop': 'off',
+
+    'no-constant-condition': 'warn',
+    'no-restricted-globals': 'warn',
+    'no-unreachable': 'warn',
+    'no-unused-labels': 'warn',
+    'no-unused-vars': 'warn',
+    'react/no-string-refs': 'warn',
+    'react/prop-types': 'off',
     'sort-imports': [
       'off',
       {

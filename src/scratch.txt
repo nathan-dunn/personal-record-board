@@ -2,5 +2,3 @@ TODO...
 
 phone padding
 data 
-link
-long name

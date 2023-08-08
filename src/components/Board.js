@@ -1,9 +1,9 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Box, Flex, Text, Stack, Wrap } from '@chakra-ui/react';
+import React from 'react';
+import { Wrap } from '@chakra-ui/react';
 import LiftContainer from './LiftContainer';
 import { SQ, PR, BP, DL } from '../data';
 
-const Board = ({ board, records, windowWidth }) => {
+const Board = ({ records, windowWidth }) => {
   return (
     <Wrap spacing={2} justify="center">
       {[SQ, PR, BP, DL].map(liftName => (

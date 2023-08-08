@@ -6,6 +6,11 @@ export const PR = 'PRESS';
 export const BP = 'BENCH';
 export const DL = 'DEADLIFT';
 
+export const links = {
+  website: 'https://www.hornstrength.com/',
+  reddit: 'https://www.reddit.com/r/hornstrength/',
+};
+
 // data helpers
 export const estimate1RM = (weight, reps) => {
   if (reps === 1) return weight;
