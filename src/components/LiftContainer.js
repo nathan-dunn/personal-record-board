@@ -13,7 +13,7 @@ const LiftContainer = ({ liftName, records }) => {
     .slice(0, numberOfRecordsDisplayed);
 
   return (
-    <WrapItem>
+    <WrapItem w="400px">
       <Box w="380px" m={6} backgroundColor={theme.colors.lightBlack}>
         <Text p={4} fontSize={'1.2em'} fontWeight="700" backgroundColor={theme.colors.hornOrange}>
           {liftName}
