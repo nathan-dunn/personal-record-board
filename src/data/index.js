@@ -55,7 +55,7 @@ addLifter('Philip A', M, PR, roundTo(350 * 0.5), 3);
 addLifter('Nick', M, PR, roundTo(330 * 0.5), 5);
 addLifter('Alex F', M, PR, roundTo(330 * 0.5), 5);
 addLifter('George M', M, PR, roundTo(325 * 0.5), 5);
-addLifter('Cesar', M, PR, roundTo(322 * 0, 0.5), 5);
+addLifter('Cesar', M, PR, roundTo(322 * 0.5), 5);
 addLifter('Bob', M, PR, roundTo(135 * 0.5), 5);
 
 addLifter('Mike M', M, BP, roundTo(402 * 0.7), 1);

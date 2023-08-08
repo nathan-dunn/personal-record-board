@@ -38,7 +38,7 @@ const LiftContainer = ({ liftName, records }) => {
 
   const recordsSorted = records
     .map(record => [...record, estimate1RM(record[1], record[2])])
-    .sort((a, b) => (a[3] < b[3] ? 1 : -1))
+    .sort((a, b) => (a[3] < b[3] ? -1 : 1))
     .slice(0, recordsDisplayed);
 
   return (
