@@ -50,7 +50,6 @@ const LiftContainer = ({ liftName, records }) => {
           p={4}
           fontSize={'1.2em'}
           fontWeight="700"
-          // backgroundColor={colors.orange}
           backgroundColor={colors.hornOrange}
           borderTopRadius="sm"
         >

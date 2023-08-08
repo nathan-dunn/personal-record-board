@@ -12,8 +12,8 @@ export const estimate1RM = (weight, reps) => {
   return Math.round(weight * reps * 0.0333 + weight);
 };
 
-const addLifter = (name, sex, liftName, weight, reps) => {
-  records[sex][liftName].push([name, weight, reps]);
+const addLifter = (name, board, liftName, weight, reps) => {
+  records[board][liftName].push([name, weight, reps]);
 };
 
 // data records
