@@ -24,8 +24,6 @@ const RecordRow = ({ record, row, len }) => {
 
   const color = colors.light;
 
-  const borderBottomRadius = row === len - 1 ? 'md' : 'none';
-
   return (
     <Flex p={2} bg={bg}>
       <TextColumn color={color} text={name} />
@@ -45,18 +43,24 @@ const LiftContainer = ({ liftName, records }) => {
 
   return (
     <WrapItem>
-      <Box w="380px" m={6} backgroundColor={colors.lightBlack}>
+      <Box
+        w="380px"
+        m={6}
+        backgroundColor={colors.lightBlack}
+        borderBottomRadius="sm"
+        borderTopRadius="sm"
+      >
         <Text
           p={4}
           fontSize={'1.2em'}
           fontWeight="700"
           backgroundColor={colors.hornOrange}
-          borderTopRadius="sm"
+          borderTopRadius="md"
         >
           {liftName}
         </Text>
 
-        <Box pl={4} pr={4}>
+        <Box pl={4} pr={4} borderBottomRadius="md">
           <RecordRow
             key="title"
             row={0}
