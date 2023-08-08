@@ -35,8 +35,24 @@ export const App = () => {
 
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl" fontFamily="Poppins">
-        <VStack minH="100vh" direction="column" p={12} spacing={5}>
+      <Box
+        textAlign="center"
+        fontSize="xl"
+        fontFamily="Poppins"
+        style={{
+          overflowX: 'hidden',
+        }}
+      >
+        <VStack
+          minH="100vh"
+          direction="column"
+          p={12}
+          spacing={5}
+          style={{
+            maxWidth: '100%',
+            overflowX: 'hidden',
+          }}
+        >
           <PageHeader
             board={board}
             handleBoardChange={handleBoardChange}
