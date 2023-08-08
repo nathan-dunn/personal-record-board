@@ -27,7 +27,7 @@ const LiftContainer = ({ liftName, records }) => {
   useEffect(() => {
     setTimeout(() => {
       onOpen();
-    }, 100);
+    }, 200);
   }, [onOpen]);
 
   return (
@@ -37,25 +37,15 @@ const LiftContainer = ({ liftName, records }) => {
           {liftName}
         </Text>
 
-        <Box pl={4} pr={4}>
-          <LiftRecordRow
-            key="title"
-            row={0}
-            record={['NAME', 'WEIGHT', 'REPS']}
-            len={recordsSorted.length}
-          />
+        <SlideFade in={isOpen} offsetY="20px">
+          <Box pl={4} pr={4}>
+            <LiftRecordRow key="title" row={0} record={['NAME', 'WEIGHT', 'REPS']} />
 
-          {recordsSorted.map((record, index) => (
-            <SlideFade in={isOpen} offsetY="20px">
-              <LiftRecordRow
-                key={index}
-                row={index + 1}
-                record={record}
-                len={recordsSorted.length}
-              />
-            </SlideFade>
-          ))}
-        </Box>
+            {recordsSorted.map((record, index) => (
+              <LiftRecordRow key={index} row={index + 1} record={record} />
+            ))}
+          </Box>
+        </SlideFade>
       </Box>
     </WrapItem>
   );

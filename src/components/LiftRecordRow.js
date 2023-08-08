@@ -3,7 +3,7 @@ import { Flex } from '@chakra-ui/react';
 import LiftRecordColumn from './LiftRecordColumn';
 import { theme } from '../styles';
 
-const LiftRecordRow = ({ record, row, len }) => {
+const LiftRecordRow = ({ record, row }) => {
   const [name, weight, reps] = record;
   const bg =
     row === 0
