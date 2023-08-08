@@ -1,15 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  Box,
-  Text,
-  WrapItem,
-  Fade,
-  ScaleFade,
-  Slide,
-  SlideFade,
-  Collapse,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Box, Text, WrapItem, SlideFade, useDisclosure } from '@chakra-ui/react';
 import { estimate1RM } from '../data';
 import { theme } from '../styles';
 import LiftRecordRow from './LiftRecordRow';
