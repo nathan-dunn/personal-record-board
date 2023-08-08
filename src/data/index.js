@@ -28,7 +28,7 @@ const addLifter = (name, board, liftName, weight, reps) => {
 
 // data records
 export const records = {
-  lastUpdated: '',
+  lastUpdated: '08/08/23',
   MEN: { SQUAT: [], PRESS: [], BENCH: [], DEADLIFT: [] },
   WOMEN: { SQUAT: [], PRESS: [], BENCH: [], DEADLIFT: [] },
 };

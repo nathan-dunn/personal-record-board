@@ -10,7 +10,7 @@ const Board = ({ board, records, windowWidth }) => {
         <LiftContainer
           key={liftName}
           liftName={liftName}
-          records={records[board][liftName]}
+          records={records[liftName]}
           windowWidth={windowWidth}
         />
       ))}

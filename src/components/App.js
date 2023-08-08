@@ -3,7 +3,8 @@ import { ChakraProvider, Box, Grid, Flex, VStack } from '@chakra-ui/react';
 import { theme } from '../styles';
 import BoardHeader from './BoardHeader';
 import Board from './Board';
-import { records, M, W } from '../data';
+import Footer from './Footer';
+import { records, M } from '../data';
 
 export const App = () => {
   const getStorage = () => {
@@ -42,7 +43,8 @@ export const App = () => {
             records={records}
             windowWidth={windowWidth}
           />
-          <Board key={board} board={board} records={records} windowWidth={windowWidth} />
+          <Board key={board} board={board} records={records[board]} windowWidth={windowWidth} />
+          <Footer lastUpdated={records.lastUpdated} />
         </VStack>
       </Box>
     </ChakraProvider>

@@ -9,7 +9,7 @@ const orange = '#FF7C36';
 const teal = '#00BBBB';
 const hornOrange = '#FF541C';
 const hornBlue = '#081832';
-const lightGray = '#F5F5F5';
+const darkWhite = '#F5F5F5';
 
 export const theme = extendTheme({
   config: {
@@ -26,7 +26,7 @@ export const theme = extendTheme({
     gray,
     hornOrange,
     hornBlue,
-    lightGray,
+    darkWhite,
   },
   styles: {
     global: props => ({
