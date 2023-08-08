@@ -8,7 +8,7 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'react/no-string-refs': 'warn',
-    'react/prop-types': 'warn',
+    'react/prop-types': 'off',
     'no-restricted-globals': 'warn',
     'no-useless-concat': 'off',
     'react/no-children-prop': 'off',
