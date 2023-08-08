@@ -47,20 +47,24 @@ const LiftContainer = ({ liftName, records }) => {
         w="380px"
         m={6}
         backgroundColor={colors.lightBlack}
-        borderBottomRadius="sm"
-        borderTopRadius="sm"
+        // borderBottomRadius="sm"
+        // borderTopRadius="sm"
       >
         <Text
           p={4}
           fontSize={'1.2em'}
           fontWeight="700"
           backgroundColor={colors.hornOrange}
-          borderTopRadius="md"
+          // borderTopRadius="md"
         >
           {liftName}
         </Text>
 
-        <Box pl={4} pr={4} borderBottomRadius="md">
+        <Box
+          pl={4}
+          pr={4}
+          // borderBottomRadius="md"
+        >
           <RecordRow
             key="title"
             row={0}
