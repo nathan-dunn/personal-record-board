@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrap } from '@chakra-ui/react';
-import LiftContainer from './LiftContainer';
+import LiftContainer from './LiftContainer.jsx';
 import { SQ, PR, BP, DL } from '../data';
 
 const Board = ({ records, windowWidth }) => {

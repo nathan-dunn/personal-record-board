@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChakraProvider, Box, VStack } from '@chakra-ui/react';
 import { theme } from '../styles';
-import PageHeader from './PageHeader';
-import Board from './Board';
-import Footer from './Footer';
-import { records, M } from '../data';
+import PageHeader from './PageHeader.jsx';
+import Board from './Board.jsx';
+import Footer from './Footer.jsx';
+import { records, M } from '../data/index.js';
 
 export const App = () => {
   const getStorage = () => {

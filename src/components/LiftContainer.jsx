@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Box, Text, WrapItem, SlideFade, useDisclosure } from '@chakra-ui/react';
-import { estimate1RM } from '../data';
-import { theme } from '../styles';
-import LiftRecordRow from './LiftRecordRow';
+import { estimate1RM } from '../data/index.js';
+import { theme } from '../styles/index.js';
+import LiftRecordRow from './LiftRecordRow.jsx';
 
 const LiftContainer = ({ liftName, records }) => {
   const { isOpen, onOpen } = useDisclosure();
@@ -10,8 +10,12 @@ const LiftContainer = ({ liftName, records }) => {
   const numberOfRecordsDisplayed = 10;
 
   const recordsSorted = records
-    .map(record => [...record, estimate1RM(record[1], record[2])])
-    .sort((a, b) => (a[3] < b[3] ? -1 : 1))
+    .map(record => {
+      return [...record, estimate1RM(record[1], record[2])];
+    })
+    .sort((a, b) => {
+      return a[3] < b[3] ? 1 : -1;
+    })
     .slice(0, numberOfRecordsDisplayed);
 
   useEffect(() => {

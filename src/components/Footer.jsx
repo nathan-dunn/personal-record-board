@@ -3,8 +3,8 @@ import { IconButton, Link, Stack, Text } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import { FaReddit } from 'react-icons/fa';
-import { links } from '../data';
-import { theme } from '../styles';
+import { links } from '../data/index.js';
+import { theme } from '../styles/index.js';
 
 dayjs.extend(localizedFormat);
 
@@ -23,9 +23,9 @@ const Footer = ({ lastUpdated }) => {
         {`Last Updated ${formatted}`}
       </Text>
 
-      <Link href={links.reddit} isExternal>
+      {/* <Link href={links.reddit} isExternal>
         <IconButton aria-label="Search database" fontSize={24} variant="link" icon={<FaReddit />} />
-      </Link>
+      </Link> */}
     </Stack>
   );
 };

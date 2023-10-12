@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Image, Button, ButtonGroup, VStack, HStack, Link } from '@chakra-ui/react';
-import { M, W, links } from '../data';
-import { theme } from '../styles';
+import { M, W, links } from '../data/index.js';
+import { theme } from '../styles/index.js';
 
 const PageHeader = ({ windowWidth, board, handleBoardChange }) => {
   return (

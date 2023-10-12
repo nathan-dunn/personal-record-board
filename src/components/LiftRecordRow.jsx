@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/react';
-import LiftRecordColumn from './LiftRecordColumn';
-import { theme } from '../styles';
+import LiftRecordColumn from './LiftRecordColumn.jsx';
+import { theme } from '../styles/index.js';
 
 const LiftRecordRow = ({ record, row }) => {
   const [name, weight, reps] = record;

@@ -2,12 +2,14 @@
   "name": "personal-record-board",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "surge": "NODE_ENV=production yarn build && surge --project ./build --domain https://radically-simple-strength.surge.sh",
+    "surge2": "NODE_ENV=production yarn build && surge --project ./build --domain https://horn-record-board.surge.sh",
     "lint": "npx eslint src"
   },
   "dependencies": {
