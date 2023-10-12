@@ -13,7 +13,7 @@ export const links = {
 
 // data records
 export const records = {
-  lastUpdated: '10/12/23',
+  lastUpdated: '8/13/23',
   MEN: { SQUAT: [], PRESS: [], BENCH: [], DEADLIFT: [] },
   WOMEN: { SQUAT: [], PRESS: [], BENCH: [], DEADLIFT: [] },
 };

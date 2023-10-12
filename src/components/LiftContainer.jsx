@@ -32,7 +32,7 @@ const LiftContainer = ({ liftName, records }) => {
         </Text>
 
         <SlideFade in={isOpen} offsetY="20px">
-          <Box pl={4} pr={4}>
+          <Box pl={4} pr={4} style={{ borderRadius: '5px' }}>
             <LiftRecordRow key="title" row={0} record={['NAME', 'WEIGHT', 'REPS']} />
 
             {recordsSorted.map((record, index) => (

@@ -1,11 +1,10 @@
-import React from 'react';
 import { Text, Image, Button, ButtonGroup, VStack, HStack, Link } from '@chakra-ui/react';
 import { M, W, links } from '../data/index.js';
 import { theme } from '../styles/index.js';
 
 const PageHeader = ({ windowWidth, board, handleBoardChange }) => {
   return (
-    <VStack spacing={5}>
+    <VStack spacing={10}>
       <Link href={links.website} isExternal>
         <Image src={require('../assets/HS+WHITE+FINAL.png')} alt="" width={480} />
       </Link>
